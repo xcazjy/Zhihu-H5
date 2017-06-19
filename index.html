@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>知乎呀</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/layout.css">
+	<link rel="icon" href="images/f672948364a6592511342b965bbfad91_m.jpg">
+	<script type="text/javascript" src="scripts/jquery.js">
+		$(document).ready(function(){
+			alert("Hello World!");
+		});
+	</script>
+</head>
+<body>
+	<nav>		<!-- 导航栏 -->	
+		<div id="top">
+			<a href="/" class="logo"></a>
+			<div class="search">
+				<form method="get">
+					<label for="q" class="hide-text">搜索呗</label>
+					<input type="text" name="" id="q" placeholder="搜索你感兴趣的内容...">
+					<button type="submit" name="" class="button">
+						<span class="button-image"></span>
+					</button> 
+				</form>
+			</div>
+			<div class="nav-top">		<!-- 内容列表 -->
+				<ul>
+					<li>
+						<a href="#" class="nav-top-link" id="menu">首页</a>
+					</li>
+					<li>
+						<a href="#" class="nav-top-link">话题</a>
+					</li>
+					<li>
+						<a href="#" class="nav-top-link">发现</a>
+					</li>
+					<li>
+						<a href="#" class="nav-top-link">消息</a>
+					</li>
+				</ul>
+			</div>		<!-- 头像+名字列表 -->	
+			<div class="nav-top-ul">
+					<a href="#">
+						<img src="images/f672948364a6592511342b965bbfad91_m.jpg">	<!-- 头像+名字 -->
+						<span class="name">ShArkJING </span>
+					</a>
+					<ul class="nav-top-hid">		<!-- 头像+名字触发列表 -->
+						<li>
+							<a href="#"><i class="icon-ho"></i>我的主页</a>
+						</li>
+						<li>
+							<a href="#"><i class="icon-pr"></i>私信</a>
+						</li>
+						<li>
+							<a href="#"><i class="icon-op"></i>设置</a>
+						</li>
+						<li>
+							<a href="#"><i class="icon-qu"></i>退出</a>
+						</li>
+					</ul>
+			</div>
+			<button class="nav-top-qu">提问</button>		<!-- 提问按钮 -->
+		</div>
+	</nav>		
+	
+								
+	<div id="container">		<!-- 内容区居中显示 -->
+		<section>				<!-- 主内容区 -->
+			<div class="con-sec-top">			<!-- 小铃铛+提问+回答+写文章+草稿 -->
+				<i class="con-sec-im"></i>
+				<div class="sec-back">
+					<ul id="sec-ul">
+						<li class="con-sec-li">
+							<a href="#"><i class="sec-top-im" id="sec-qu"></i>提问</a>
+						</li>
+						<li class="con-sec-li">
+							<a href="#"><i class="sec-top-im" id="sec-an"></i>回答</a>
+						</li>
+						<li class="con-sec-li">
+							<a href="#"><i class="sec-top-im" id="sec-wr"></i>写文章</a>
+						</li>
+					</ul>
+					<div class="con-sec-ca"><a href="#">草稿</a></div>
+				</div>
+			</div>
+			<div class="sec-mid">
+				<i class="new-im" id="new-im"></i>最新动态	
+				<a href="#"><i class="new-im" id="new-a-im"></i>设置</a>
+			</div>
+			<div id="sec-con-all">
+				<div class="con-all">
+					<div class="all-con">
+						<div class="all-con-im">
+							<a href="#"><img src="images/f672948364a6592511342b965bbfad91_m.jpg"><p>1693</p></a>
+						</div>
+						<div class="all-con-con">
+							<span>来自话题：</span><a href="#">教育</a>、<a href="#">心理学</a>
+							<p><a href="#">摧毁一个熊孩子有多难？</a></p>
+							<p><a href="#">居士说，</a><span>喜欢清晨的sunshine啊。</span></p>
+							<a href="#">看到这个问题我有种怪怪的感觉，总觉得这些熊孩子们过上一二十年，就会在知乎“人可以有多坏”之类的问题下面，讲一讲自己幼时遇到的恶人如何残忍地对待一个孩子，从而改变了自己的一生，把自己从一个活泼健康的孩子变成了内向孤僻的人。 然后一群人在评论… </a><a href="#">显示全部</a>
+							<ul id="wenti">
+								<li><a href="#"><i></i>关注问题</a></li>
+								<li><a href="#"><i></i>198条评论</a></li>
+								<li><a href="#"><i></i>作者保留权利</a>
+									<ul>
+										<li><a href="#"><i class="zuo-icon" id="ic-gan"></i>感谢</a></li>
+										<li><a href="#"><i class="zuo-icon" id="ic-shou"></i>收藏</a></li>
+										<li><a href="#"><i class="zuo-icon" id="ic-fen"></i>分享</a></li>
+										<li><a href="#"><i class="zuo-icon" id="ic-mei"></i>没有帮助</a></li>
+										<li><a href="#"><i class="zuo-icon" id="ic-ju"></i>举报</a></li>
+										<li><a href="#"><i class="zuo-icon" id="ic-zuo"></i>作者保留权利</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="con-all">
+					<div class="all-con">
+						<div class="all-con-im"></div>
+						<div class="all-con-con"></div>
+					</div>
+				</div>
+				
+
+			</div>
+		</section>		
+
+		
+		<div id="right">
+			<aside>
+				<div><ul id="shou">
+					<li class="as-icon"><i></i><a href="#">我的收藏</a></li>
+					<li class="as-icon"><i></i><a href="#">我关注的问题</a></li>
+					<li class="as-icon"><i></i><a href="#">邀请我回答问题</a></li>
+				</ul></div>
+				<div><ul id="hua">
+					<li class="as-icon"><i></i><a href="">话题广场</a></li>
+					<li class="as-icon"><i></i><a href="">公共编辑动态</a></li>
+					<li class="as-icon"><i></i><a href="">社区服务中心</a></li>
+					<li class="as-icon"><i></i><a href="">版权服务中心</a></li>
+				</ul></div>
+				<div><h3>知乎专栏</h3><a href="#"><i></i>专栏·发现</a></div>
+				<div><h3>知乎 Live ⚡️</h3><a href="" class="chakan">查看全部 »</a><ul id="live">
+					<li class="as-icon"><a href=""><i></i>摩洛哥</a></li>
+					<li class="as-icon"><a href=""><i></i>总统大选</a></li>
+					<li class="as-icon"><a href=""><i></i>怎样才能睡得更好</a></li>
+				</ul></div>
+				<div><h3>知乎圆桌</h3><a href="" class="chakan">查看全部 »</a><ul id="yuan">
+					<li class="as-icon"><a href=""><i></i>2016诺贝尔奖巡礼</a></li>
+					<li class="as-icon"><a href=""><i></i>网瘾与网络生活</a></li>
+					<li class="as-icon"><a href=""><i></i>空间技术揭秘</a></li>
+				</ul><h3>知乎书店</h3><a href="" class="chakan">查看全部 »</a><ul id="yuan">
+					<li class="as-icon"><a href=""><i></i>日本有意思</a></li>
+					<li class="as-icon"><a href=""><i></i>择校值得吗</a></li>
+					<li class="as-icon"><a href=""><i></i>汽车是怎么造出来的</a></li>
+				</ul></div>
+				<div><i></i><a href="">下载 App</a></div>
+			</aside>		<!-- 右侧边栏 -->
+			<footer>刘看山 知乎指南 建议反馈 移动应用 加入知乎 知乎协议 联系我们 © 2016 知乎</footer>	<!-- 页脚 -->
+		</div>
+	</div>	
+</body>
+</html>
