@@ -1,0 +1,555 @@
+* {													/*全局 内 外边距为0*/
+	margin: 0px;
+	padding: 0px;
+}
+
+body {												/*整体清除样式*/
+	margin: 0px auto;
+	padding: 0px;
+	font-family: Verdana;
+	font-size: 13px;
+}
+
+ul {												/*整体清除样式*/
+	list-style: none;
+}
+
+img {												/*整体清除样式*/
+	border: 0;
+}
+
+a {													/*整体清除样式*/
+	text-decoration: none;
+}
+
+nav {												/*导航栏*/
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 20;
+	width: 100%;
+	height: 45px;
+	background: #0767c8;
+}
+
+#top {												/*nav 居中部分*/
+	position: static;
+	width: 960px;
+	height: 45px;
+	margin: 0px auto;
+}
+
+#top a.logo {										/*知乎logo*/
+	float: left;
+	display: block;
+	width: 61px;
+	height: 100%;
+	background-position: 0 8px;
+	background-image: url(../images/new_logo@2x.9187366b.png);
+	background-size: 61px 30px;
+	background-repeat: no-repeat;
+}
+
+.hide-text {										/*搜索label*/
+	display: block;
+	width: 0px;
+	height: 0px;
+    color: transparent;
+    text-shadow: none;
+    background-color: transparent;
+    border: 0;
+}
+
+div.search {										/*搜索div*/
+	float: left;
+	position: relative;
+	margin: 7px 0 0 12px;
+	width: 367px;
+}
+
+.button {											/*搜索按钮*/
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 40px;
+	height: 100%;
+	border: 1px solid #045bb2;
+	border-top-right-radius: 4px;
+	border-bottom-right-radius: 4px;
+	cursor: pointer;
+	padding: 0;
+	box-shadow: 0 1px 2px rgba(0,0,0,.05), inset 0 1px 1px rgba(255,255,255,.15);
+	box-sizing: border-box;
+	background-color: #0d73da;
+}
+
+.button-image {										/*搜索文本框-放大镜*/
+	display: block;
+	background-image: url(../images/sprites@2x.auto.3585c7e7.png);
+	background-position: -82px 0;
+	background-size: 97px 94px;
+	background-repeat: no-repeat;
+	width: 15px;
+	height: 15px;
+	margin: 0px 0px 0px 11px;
+}
+
+#q {												/*搜索文本框*/
+	padding: 7px 50px 7px 10px;
+	width: 100%;
+	color: #49525c;
+	font-size: 14px;
+	line-height: 17px;
+	background-color: #e1eaf2;
+	border: 1px solid #045bb2;
+	border-radius: 4px;
+	box-shadow: inset 0 1px 3px rgba(0,0,0,.2),0 1px 0 rgba(255,255,255,.1);
+	outline: 0;
+	box-sizing: border-box;
+}
+
+.nav-top {											/*首页+话题+发现+消息div*/
+	float: left;
+	width: 234px;
+	height: 45px;
+}
+
+.nav-top ul {										/*首页+话题+发现+消息 框*/
+	margin: 0;
+	padding: 0;
+	height: 45px;
+}
+
+.nav-top li {										/*话题 发现 消息 样式*/ 
+	float: left;
+	margin: 0;
+	width: 53px;
+	height: 45px;
+	text-align: center;
+}
+
+.nav-top li:first-of-type {							/*首页 margin样式 样式与众不同*/
+	float: left;
+	margin: 0 0 0 19px;
+	width: 53px;
+	height: 45px;
+}
+
+.nav-top a:hover {									/*首页+话题+发现+消息 滑动文字白色*/
+	color: #fff;
+}
+
+.nav-top li:hover {									/*首页+话题+发现+消息 滑动鼠标显示*/
+	cursor: pointer;
+}
+
+a.nav-top-link {									/*首页 话题 发现 消息*/
+	display: block;
+	width: 53px;
+	height: 45px; 
+	font-size: 14px;
+	line-height: 3em;
+	color: #eee;
+}
+
+a#menu {
+background-color: #095fb3;							/*首页的背景色*/
+}
+
+.nav-top-qu {										/*提问按钮*/
+	float: right;
+	margin: 7px 0px 0px 0px;
+	height: 32px;
+	width: 66px;
+	color: #eee;
+	font-size: 14px;
+	background-color: #0e7bef;
+	border-radius: 4px;
+	border: 1px solid #045bb2; 
+	cursor: pointer;
+}
+
+.nav-top-ul a {										/*头像+名字连接*/
+	line-height: 3.5em;
+	float: right;
+	display: block;
+	margin: 0;
+	width: 120px;
+	height: 44px;
+}
+
+.nav-top-ul img {									/*头像图片*/
+	width: 27px;
+	border: 0px;
+	margin-left: 5px;
+	vertical-align: middle;
+}
+
+.nav-top-ul span {									/*名字*/
+	float: right;
+	font-size: 13px;
+	color: #fff;
+	height: 45px;
+	line-height: 3.6em;
+	margin: 0 6px 0 0;
+}
+
+.nav-top-ul {										/*头像名字菜单*/
+	float: right;
+	position: relative;
+	margin: 0 0 0 15px;
+	height: 45px;
+	width: 120px;
+	padding: 0px;
+}
+
+.nav-top-ul:hover {									/*滑过 头像+名字 背景色*/
+	background-color: #095fb3;
+}
+
+.nav-top-hid {										/*头像名字滑动弹出窗*/
+	position: absolute;
+	width: 120px;
+	top: 45px;
+	right: 0px;
+	display: none;
+	padding: 0px;
+	margin-top: 0px;
+	background-color: #095fb3; 
+	border-radius: 0 0 4px 4px;
+}
+
+.nav-top-ul:hover .nav-top-hid {					/*滑过 头像名字 呼出 隐藏栏*/
+	display: block;
+}
+
+
+.nav-top-hid a:hover { 								/*滑过 头像+名字 隐藏栏 每行背景色*/
+	background-color: #0267cc;
+
+}
+
+
+.nav-top-hid li i {									/*隐藏栏 图标 行内块元素*/
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	margin: 0 11px 0 15px;
+}
+
+.nav-top-hid li a {									/*隐藏栏 名称 样式*/
+	display: block;
+	font-size: 14px;
+	color: #fff;
+	width: 120px;
+	height: 40px;
+	line-height: 40px;
+}
+
+.nav-top-hid>li{									/*隐藏栏 图标+名称 高+下边线样式*/
+	height: 40px;
+	border-bottom: 1px solid #0d5aa5;
+}
+
+.nav-top-hid>li:last-of-type {						/*隐藏栏 最后一个 图标+名称 下边线样式特殊*/
+	border-bottom: 0px;
+}
+
+.nav-top-hid>li:last-child:hover a{					/*隐藏栏 滑过 最后一个 图标+名称 下左 下右边框圆角 无下边线*/
+	border-radius: 0 0 4px 4px;
+	border-bottom: 0px;
+}
+
+.icon-ho {											/*隐藏栏 图标 样式 定位*/
+	background-image: url(../images/sprites-1.9.2@2x.6e638473.png);
+	background-position: -4px -3px;
+	background-size: 308px 250px;
+}
+
+.icon-pr {											/*隐藏栏 图标 样式 定位*/
+	background-image: url(../images/sprites-1.9.2@2x.6e638473.png);
+	background-position: -4px -29px;
+	background-size: 308px 250px;
+
+}
+
+.icon-op {											/*隐藏栏 图标 样式 定位*/
+	background-image: url(../images/sprites-1.9.2@2x.6e638473.png);
+	background-position: -4px -56px;
+	background-size: 308px 250px;
+}
+
+.icon-qu {											/*隐藏栏 图标 样式 定位*/
+	background-image: url(../images/sprites-1.9.2@2x.6e638473.png);
+	background-position: -4px -83px;
+	background-size: 308px 250px;
+}
+
+#container {										/*内容区居中显示*/
+	position: relative;
+ 	width: 960px;
+ 	margin: 0 auto;
+ 	padding: 25px 0 50px;
+ 	z-index: 2;
+	margin-top: 45px;
+}
+
+section {											/*主内容区*/
+	float: left;
+	width: 632px;
+}
+
+.con-sec-top{										/*提问+回答+写文章+草稿 下外边距*/
+	margin-bottom: 30px;
+}
+
+.con-sec-im {										/*头像*/ 											
+	float: left;
+	width: 42px;
+	height: 42px;
+	background-image: url(../../img/ooopic_1474264238.png);
+	background-size: 42px;
+}
+
+.sec-back {											/*提问+回答+写文章+草稿 背景色 圆角 边框*/
+	height: 48px;
+	background-color: #fafafa;
+	margin-left: 58px;
+	border-radius: 4px;
+	border: 1px solid #f0f0f0; 
+}
+
+#sec-ul {																					
+	float: left;
+	width: 523px;
+}
+
+.con-sec-li {										/*提问+回答+写文章 左浮动 行高*/	
+	float: left;
+	height: 48px;
+	line-height: 48px;
+	padding: 0 32px 0 27px;
+}
+
+.con-sec-li:nth-of-type(2) {						/*回答 左右边框？？？？*/
+	border-right: 1px solid #f0f0f0; 
+	border-left: 1px solid #f0f0f0; 
+}
+
+.con-sec-li a {		
+    color: #6c829f;									/*提问+回答+写文章 按钮链接 块元素 高 鼠标样式*/				
+	display: block;
+	height: 48px;
+	cursor: pointer;
+}
+
+.con-sec-li i {										/*按钮图标 行内块元素 不换行 上下居中显示*/
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.sec-top-im {										/*提问+回答+写文章 图片*/
+	background-image: url(../images/sprites@2x.auto.55edf5a3.png);
+	background-size: 208px 89px;
+	width: 24px;
+	height: 24px;
+}
+
+#sec-qu {											/*提问按钮图标定位*/
+	background-position: -176px -32px;
+}
+
+#sec-an {											/*回答按钮图标定位*/
+	background-position: -97px -32px;
+}
+
+#sec-wr {											/*写文章按钮图标定位*/
+	background-position: -97px -58px;
+}
+
+.con-sec-li a:hover {								/*鼠标滑过 提问+回答+写文章 字体颜色*/
+	color: #259;
+}
+
+.con-sec-li a:hover #sec-qu {						/*鼠标滑过 提问 图标变化*/
+	background-position: -124px -32px;
+}
+
+.con-sec-li a:hover #sec-an {						/*鼠标滑过 回答 图标变化*/
+	background-position: -149px -32px;
+}
+
+.con-sec-li a:hover #sec-wr {						/*鼠标滑过 写文章 图标变化*/
+	background-position: -123px -58px;
+}
+
+
+.con-sec-ca {										/*草稿 样式*/
+	float: left;
+	width: 26px;
+	height: 48px;
+	line-height: 48px;
+}
+
+.con-sec-ca a{										/*草稿 字体颜色*/
+	color: #999;
+}
+
+.con-sec-ca a:hover {								/*滑过 草稿 字体颜色*/
+	color: #259;
+}
+
+.sec-mid {											/*动态+设置 样式*/
+	height: 23px;
+	margin-bottom: 10px;
+	font-size: 14px;
+	line-height: 22px;
+	color: #666;
+	font-weight: 700;
+}
+
+.new-im {											/* 图标 最新动态+设置*/
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background-image: url(../images/sprites-1.9.2@2x.6e638473.png);
+	background-size: 308px 250px;
+	margin: 0 5px 0 0;
+	vertical-align: middle;
+}
+
+#new-im {											/*图标定位 最新动态*/
+	background-position: -71px -88px;
+}
+
+#new-a-im {											/*图标定位 设置*/
+	background-position: -86px -148px;
+	margin-right: 1px;
+}
+
+.sec-mid a {										/*设置 链接样式*/
+	display: block;
+	float: right;
+	color: #999;
+	font-weight: 400;
+}
+
+.sec-mid a:hover {									/*鼠标滑过 设置样式*/
+	text-decoration: underline;
+	color: #698ebf;
+}
+
+.con-all {
+	border-top: 1px solid #eee;
+}
+
+.all-con {
+	margin: 15px 0;
+	height: 128px;
+}
+
+.all-con-im {
+	width: 38px;
+	float: left;
+}
+
+.all-con-im img {
+	width: 38px;
+	height: 38px;
+	border-radius: 4px;
+}
+
+.all-con-im p {
+	text-align: center;
+	width: 38px;
+	height: 18px;
+	background-color: #eee;
+	border-radius: 4px;
+}
+
+.all-con-con {
+	margin-left: 50px;
+	height: 128px;
+}
+
+.all-con-con a {
+	color: #999;
+	line-height: 1.4;
+}
+
+.all-con-con ul li {
+	float: left;
+	margin: 0 10px;
+}
+
+.all-con-con ul li ul {
+	display: none;
+}
+
+/*.all-con-con ul li:nth-of-type(3):hover {
+	font-size: 0;
+}*/
+
+.all-con-con ul li:hover ul {
+	display: block;
+	top: -10px;
+	left: 0px;
+}
+
+
+
+
+
+
+
+
+
+#right {											/*右边栏及页脚*/
+	float: right;
+	width: 270px;
+}
+
+#right i {
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	background-image: url(../images/sprites-1.9.2@2x.6e638473.png);
+	background-size: 308px 250px;
+	background-position: -26px -32px;
+}
+
+.chakan {
+	float: right;
+	color: #999;
+}
+
+aside div {
+	border-top: 1px solid #eee;
+	line-height: 2.4em;
+}
+
+aside a {
+	color: #222;
+}
+
+footer {
+	color: #999;
+	font-size: 13px;
+	line-height: 1.7;
+	border-top: 1px solid #eee;
+	padding-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
